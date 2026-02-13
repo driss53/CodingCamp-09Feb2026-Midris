@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VoTech Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">VoTech</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Our Profile</a>
+    <a href="#message">Message Us</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi <span id="username">Guest</span> 👋</h1>
+    <p>Welcome to our modern digital solution platform.</p>
+    <button onclick="scrollToMessage()">Contact Us</button>
+  </div>
+</section>
+
+<section class="hq">
+  <h2>🌍 Our Headquarters</h2>
+  <div class="hq-container">
+    <div class="city-card">Jakarta</div>
+    <div class="city-card">Bandung</div>
+    <div class="city-card">Surabaya</div>
+  </div>
+</section>
+
+<section class="message-section" id="message">
+  <h2>📩 Message Us</h2>
+
+  <div class="message-container">
+
+    <form id="messageForm" class="card">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="date" id="dob">
+
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </div>
+
+      <textarea id="messageInput" placeholder="Write your message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="table-wrapper card">
+      <table id="messageTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Tanggal</th>
+            <th>Gender</th>
+            <th>Pesan</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 VoTech Company. All Rights Reserved.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
